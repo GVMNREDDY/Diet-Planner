@@ -1,0 +1,330 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.main-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("D:/MiNi/react Office Files/Diet_Images/webBack.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1; /* Keeps it behind content */
+}
+
+.main-div2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1; /* Ensures it stays above .main-div */
+    /* Add background or content styles here */
+    overflow-y: scroll;
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------LoginForm-------------------------------------------------------------------- */
+
+.loginformdiv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    border: 2px solid;
+    background-image: url("D:\MiNi\react Office Files\mini_project\public\BackGroundImages/login1.jpg");
+    /* filter: contrast(150%); */
+    filter: saturate(200%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.formclass{
+    width: 25vw;
+    height: 60vh;
+    /* border: 2px solid; */
+    background-image: url("D:\MiNi\react Office Files\Diet_Images/Headerimg.jpeg");
+    filter: drop-shadow(10px 10px 7px grey);
+    /* border-radius: 50%; */
+    /* background-image: url("D:\MiNi\react Office Files\Diet_Images/wallback.jpeg"); */
+    /* background-attachment: fixed;
+    background-size: cover; */
+}
+
+.formclass:hover{
+    /* box-shadow: 0px 0px 100px 10px rgb(203, 234, 142); */
+    border-radius: 10px;
+}
+
+.formclass:hover .LogoLogin{
+    text-shadow: 0px 0px 20px greenyellow;
+}
+
+.form1{
+    /* padding: 2.5em; */
+}
+
+.divinform{
+    box-sizing: border-box;
+    /* background-color: red; */
+    width: 20vw;
+    height: 8vh;
+    margin: 2.5em;
+    padding: .25em;
+}
+
+.labelclass{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.inputclass{
+    height: 4vh;
+    width: 18vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: black;
+    background-color: rgba(255, 254, 254, 0);
+}
+
+.divbtn{
+    /* background-color: red; */
+    width: 18.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginbtn{
+    text-align: center;
+    height: 6vh;
+    width: 7.5vw;
+    border-radius: 50px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    background: linear-gradient(90deg, rgba(138,188,234,0.9943627109046743) 0%, rgba(82,252,70,0.6862394616049545) 80%);
+    /* color: whitesmoke; */
+    font-weight: bold;
+    box-shadow: 0px 0px 20px rgba(56, 59, 56, 0.347);
+}
+
+
+/* ---------------------------------------------------------------------------headerClass---------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.header-class {
+    width: 98.4vw;
+    height: 7vh;
+    position: sticky;
+    top: -2px;
+    /* background-color: rgba(14, 15, 15, 0.541); */
+    background-image: url("D:/MiNi/react Office Files/Diet_Images/wallback.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 0 50px 50px 50px;
+    margin: 2px;
+    color: wheat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 3;
+}
+
+.iconsheader{
+    /* background-color: red; */
+    color: wheat;
+}
+
+.inputmain{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 50px;
+    padding-left: 20px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+}
+
+.sub-div-1 {
+    /* background-color: aqua; */
+    /* background-image: url("D:/MiNi/react Office Files/mini_project/public/Monday.jpg"); */
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.data-div{
+    /* border: 2px solid; */
+    width: 40vw;
+    height: 30vh;
+    font-weight: bold;
+    position: relative;
+    transition: transform .5s ease-in-out;
+    margin: 10px;
+    /* overflow-y: scroll; */
+}
+
+.data-div h1{
+    text-shadow: 1px 1px 5px whitesmoke;
+}
+
+.data-div:hover{
+    background-color: rgba(115, 140, 131, 0.547);
+    /* scale: 1.2; */
+    transform: scale(1.1);
+    color: white;
+}
+
+.data-div:hover h1{
+    margin-top: 0px;
+    display: inline;
+    color: rgb(222, 222, 222);
+    text-shadow: 4px 4px 5px black;
+}
+
+.data-div:hover .imageTag{
+    z-index: -2;
+}
+
+.imageTag{
+    z-index: 2;
+    position: absolute;
+    /* border: 10px solid; */
+    width: 20vw;
+    top: 0;
+    right: 0;
+    height: 30vh;
+}
+
+.sub-div-monday li{
+    background-color: rgba(95, 81, 74, 0.547);
+}
+
+.sub-div-monday {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.sub-div-tuesday {
+    background-color: rgb(13, 255, 150);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-div-wednesday {
+    background-color: rgb(13, 255, 150);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-div-thursday {
+    background-color: rgb(13, 255, 150);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-div-friday {
+    background-color: rgb(13, 255, 150);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-div-saturday {
+    background-color: rgb(13, 255, 150);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-div-sunday {
+    background-color: rgb(13, 255, 150);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.favspan{
+    font-size: 1rem;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    /* border: 2px solid; */
+    border-radius: 50%;
+}
+
+.favspan:hover{
+    /* background-color: rgba(95, 81, 74, 0.547); */
+    cursor: pointer;
+}
+
+.threedots:hover{
+    /* font-weight: bold; */
+    color: rgba(255, 119, 0, 0.736);
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------   Menu Details   --------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------- */
+
+.headerClass{
+    /* background-color: rgb(226, 175, 109); */
+    background-image: url("D:\MiNi\react Office Files\mini_project\public\BackGroundImages/horizontalplainwood1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    /* border: 2px solid; */
+    border-top: none;
+    box-shadow: 0px 0px 10px 10px rgb(252, 186, 88) inset ;
+}
+
+.maindivinMenuDetails{
+    background-image: url("D:\MiNi\react Office Files\mini_project\public\BackGroundImages/horizontalplainwood1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.menu-item{
+    /* width: 20vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center; */
+    transition: translate .5s ease-in-out ;
+    /* position: relative; */
+}
+
+.menu-item:hover {
+    translate: 0px 40px;
+}
+
+
+
+/* I'm the Css of the Diet Web Application and i'm working perfectly */
